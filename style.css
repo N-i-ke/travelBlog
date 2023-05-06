@@ -1,0 +1,346 @@
+@charset "UTF-8";
+/*# sourceMappingURL=style.css.map */
+/*
+Theme Name: blog
+*/
+html {
+  font-size: 100%;
+}
+body {
+  color: #333;
+  font-size: 1rem;
+  font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+li {
+  list-style: none;
+}
+.wrapper {
+  max-width: 1200px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+.readmore {
+  font-size: 0.875rem;
+  text-align: center;
+}
+.readmore a {
+  padding-bottom: 1px;
+  color: #333;
+  position: relative;
+}
+.readmore a::after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: #333;
+  transition: all 200ms ease;
+}
+.readmore a:hover::after {
+  opacity: 0;
+  transform: translateY(3px);
+}
+
+/*-------------------------------------------
+header
+-------------------------------------------*/
+#header {
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  z-index: 999;
+}
+#header .site-title {
+  padding: 20px 16px;
+  line-height: 1px;
+}
+#header .site-title a {
+  display: inline-block;
+}
+#navi {
+  background-color: #333;
+}
+#navi a {
+  color: #fff;
+}
+#navi ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#navi li {
+  font-size: 0.875rem;
+  padding: 10px 60px 10px 0;
+}
+
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 767px) {
+  /*-------------------------------------------
+  header
+  -------------------------------------------*/
+  #header .site-title {
+    padding: 20px 16px;
+  }
+  #navi {
+    overflow-x: scroll;
+  }
+}
+
+/*-------------------------------------------
+footer
+-------------------------------------------*/
+#footer {
+  font-size: 0.875rem;
+  background-color: #f7f7f7;
+}
+#footer .content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#footer .item {
+  width: 30%;
+}
+#footer .footer-title {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+#footer ul.about-list {
+  margin: 20px 0;
+}
+#footer ul.about-list li {
+  margin-bottom: 5px;
+}
+#footer ul.about-list .arrow {
+  position: relative;
+  display: inline-block;
+  padding-left: 12px;
+  color: #333;
+}
+#footer ul.about-list .arrow::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 0 6px 8px;
+  border-color: transparent transparent transparent #333;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -6px;
+}
+#footer .menu-list {
+  border-bottom: solid  1px #777;
+}
+#footer .menu-list > li {
+  border-top: solid  1px #777;
+  padding: 15px;
+  text-align: left;
+}
+#footer .copyright {
+  font-size: 0.750rem;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 767px) {
+  /*-------------------------------------------
+  footer
+  -------------------------------------------*/
+  #footer .content {
+    flex-direction: column;
+  }
+  #footer .item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+/*-------------------------------------------
+container
+-------------------------------------------*/
+#container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 150px;
+  margin-bottom: 60px;
+}
+main {
+  width: 65%;
+}
+main article {
+  margin-bottom: 80px;
+}
+main article img {
+  height: auto;
+}
+main .article-title {
+  font-size: 1.5rem;
+  margin: 10px 0 15px 0;
+}
+main .meta {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+main .meta li {
+  font-size: 0.875rem;
+  margin-right: 20px;
+}
+main .text {
+  padding: 10px 40px 30px 40px;
+}
+
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 767px) {
+  /*-------------------------------------------
+  container
+  -------------------------------------------*/
+  #container {
+    flex-direction: column;
+    padding-top: 140px;
+  }
+  main {
+    width: 100%;
+    margin-bottom: 80px;
+  }
+  main .text {
+    padding: 10px 0;
+  }
+}
+
+/* pagination */
+.pagination ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.pagination li {
+  padding: 0 10px;
+}
+.pagination ul a:hover {
+  opacity: 0.7;
+}
+
+/*-------------------------------------------
+aside
+-------------------------------------------*/
+#sidebar {
+  width: 33%;
+  padding: 20px;
+}
+#sidebar .side-title {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.author {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.author img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+.author .profile {
+  font-size: 0.875rem;
+  text-align: left;
+}
+.archive {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.archive ul {
+  border-bottom: solid  1px #777;
+}
+.archive li {
+  font-size: 0.875rem;
+  border-top: solid  1px #777;
+  padding: 20px;
+  text-align: left;
+}
+
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 767px) {
+  /*-------------------------------------------
+  aside
+  -------------------------------------------*/
+  #sidebar {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* single.php_style.css */
+.post-link {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 767px) {
+  .post-link {
+    width: 100%;
+  }
+}
+
+/*-------------------------------------------
+contact form
+-------------------------------------------*/
+input,
+textarea {
+  width: 100%;
+  border: solid 1px #c8c8c8;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 15px 0;
+}
+input[type="submit"]:hover {
+  opacity: 0.7;
+}
+
+main .page-title {
+  border-bottom: solid 1px #777;
+  font-size: 1.75rem;
+  padding-bottom: 10px;
+  margin-bottom: 60px;
+}
+
+#searchform {
+  position: relative;
+  margin-bottom: 60px;
+}
+#searchform button {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+}
