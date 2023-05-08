@@ -1,6 +1,7 @@
 # travelBlog
- 
-ブログ型サイトをWordPressで構築しました。
+
+オリジナルテーマの自作
+ブログ型サイトをWordPressで構築。
 
 PHP version 8.1.9
 
