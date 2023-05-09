@@ -13,9 +13,9 @@ DB MySQL 8.0.16
 
 カスタム投稿、固定投稿、検索フォーム、お問い合わせなど
 
-・使用ブラグイン
+・使用プラグイン
 
-Contact Form 7
+Contact Form 7（お問い合わせフォーム）
 
 WP Mail SMTP
 
